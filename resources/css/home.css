@@ -1,589 +1,596 @@
-        /*---------------------Main section--------------------------*/
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        html {
-            font-size: 24px;
-            font-family: 'Roboto', sans-serif;
-            text-rendering: optimizeLegibility;
-        }
-        
-        .clear-fixed {
-            zoom: 1;
-        }
-        
-        .clear-fixed::after {
-            content: ".";
-            clear: both;
-            display: block;
-            height: 0;
-            visibility: hidden;
-        }
-        /*---------------------Header section--------------------------*/
-        
-        header {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/slider1.jpg);
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 100vh;
-        }
-        
-        .nav {
-            background-color: black;
-            position: fixed;
-        }
-        
-        .shop-name,
-        .logo {
-            color: #ccae9a;
-        }
-        
-        .logo {
-            font-size: 150%;
-            margin-top: 10px;
-            margin-left: 100px;
-        }
-        
-        .shop-name {
-            font-size: 110%;
-            display: inline-block;
-            border: 1px solid #ccae9a;
-            border-radius: 15px;
-            padding: 10px;
-            margin-top: 10px;
-            margin-left: 50px;
-            float: left;
-        }
-        
-        .main-nav {
-            list-style: none;
-            float: right;
-            margin-top: 10px;
-        }
-        
-        .main-nav li {
-            display: inline;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-        
-        .main-nav li .home {
-            border-bottom: 2px solid #ccae9a;
-            padding-bottom: 4px;
-            color: white;
-            text-decoration: none;
-        }
-        
-        .main-nav li .link {
-            text-decoration: none;
-            color: #ccae9a;
-            padding-bottom: 4px;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom 0.3s, color 0.3s;
-        }
-        
-        .main-nav li .link:hover {
-            color: #f5efeb;
-            border-bottom: 2px solid #ccae9a;
-        }
-        
-        .text-box {
-            position: absolute;
-            top: 50%;
-            left: 30%;
-            transform: translate(-50%, -50%);
-            color: white;
-        }
-        
-        .text-box h1 {
-            font-weight: 400;
-            font-size: 250%;
-            padding-left: 170px;
-            text-transform: uppercase;
-        }
-        
-        .text:before {
-            content: " ";
-            display: block;
-            width: 200px;
-            height: 1px;
-            margin: 0 auto;
-            background-color: #ccae9a;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .text {
-            text-align: center;
-            font-weight: 200;
-        }
-        /*---------------------Feature section--------------------------*/
-        
-        .offer-table {
-            margin: 0 auto;
-            margin-top: 110px;
-            width: 80%;
-        }
-        
-        .offer-col {
-            width: 20%;
-        }
-        
-        .offer {
-            margin-top: 100px;
-        }
-        
-        h2,
-        .offer-text {
-            text-align: center;
-        }
-        
-        h2 {
-            text-transform: uppercase;
-            color: #ac7b58;
-        }
-        
-        h2::after {
-            content: " ";
-            display: block;
-            width: 200px;
-            height: 1px;
-            margin: 0 auto;
-            background-color: black;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-        
-        .offer-text {
-            font-size: 90%;
-            color: #2b1e15;
-        }
-        
-        .small-icon {
-            padding-left: 100px;
-            padding-bottom: 25px;
-            font-size: 240%;
-            color: #6d4c36;
-        }
-        
-        .feature-text {
-            color: black;
-            text-align: center;
-            font-size: 70%;
-        }
-        /*---------------------Ads section--------------------------*/
-        
-        .ads-js {
-            height: 100px;
-            background-color: transparent;
-        }
-        
-        .ads {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/slider3.jpg);
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            height: 100vh;
-            position: relative;
-            margin-top: 100px;
-        }
-        
-        .ads h3 {
-            position: absolute;
-            top: 500px;
-            left: 450px;
-            font-weight: 600;
-            font-size: 180%;
-            display: inline;
-            padding: 15px;
-            color: #ac7b58;
-            text-transform: uppercase;
-            font-style: italic;
-            letter-spacing: 10px;
-            word-spacing: 15px;
-            border: 1px solid #ac7b58;
-            border-radius: 12px;
-            animation: ads 3s ease-in-out;
-        }
-        
-        @keyframes ads {
-            from {
-                top: 550px;
-                left: 800px;
-                font-weight: 0;
-                font-size: 0%;
-                padding: 0px;
-                color: white;
-                letter-spacing: 0px;
-                word-spacing: 0px;
-                border: 0px solid white;
-                border-radius: 0px;
-                opacity: 0;
-            }
-            to {
-                top: 500px;
-                left: 450px;
-                font-weight: 600;
-                font-size: 180%;
-                display: inline;
-                padding: 15px;
-                color: #ac7b58;
-                letter-spacing: 10px;
-                word-spacing: 15px;
-                border: 1px solid #ac7b58;
-                border-radius: 12px;
-                opacity: 1;
-            }
-        }
-        /*---------------------Coffee Quality section--------------------------*/
-        
-        .quality-table {
-            margin: 0 auto;
-            margin-top: 60px;
-            width: 90%;
-        }
-        
-        .quality-col {
-            width: 25%;
-        }
-        
-        .quality-header,
-        h4,
-        h5,
-        .quality-text {
-            text-align: center;
-        }
-        
-        .quality-header {
-            margin-top: 50px;
-            font-weight: 600;
-            font-size: 200%;
-            color: #ac7b58;
-            text-transform: uppercase;
-        }
-        
-        .quality-header::after {
-            content: " ";
-            display: block;
-            width: 200px;
-            height: 1px;
-            margin: 0 auto;
-            background-color: black;
-            margin-top: 30px;
-        }
-        
-        .quality {
-            font-style: italic;
-            font-size: 250%;
-            font-weight: 400;
-            color: #ac7b58;
-            padding-bottom: 20px;
-        }
-        
-        h5 {
-            font-weight: 400;
-            font-size: 110%;
-            text-transform: uppercase;
-        }
-        
-        .quality-text {
-            font-size: 66%;
-            font-weight: 300;
-        }
-        /*---------------------Coffee shop section--------------------------*/
-        
-        .coffee-shop {
-            margin-top: 60px;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/coffee-shop.jpg);
-            background-position: center;
-            background-size: cover;
-            height: 100vh;
-        }
-        
-        .shop-header {
-            font-size: 200%;
-            font-weight: 400;
-            text-transform: uppercase;
-            color: white;
-            letter-spacing: 10px;
-            word-spacing: 20px;
-            padding-top: 60px;
-        }
-        
-        .shop-header::after {
-            content: " ";
-            display: block;
-            width: 400px;
-            height: 2px;
-            margin: 0 auto;
-            background-color: #ac7b58;
-            margin-top: 30px;
-        }
-        
-        .shop-table {
-            width: 90%;
-            margin: 0 auto;
-            margin-top: 50px;
-        }
-        
-        .shop-col {
-            margin-right: 50px;
-            width: 20%;
-        }
-        
-        .shop-table img {
-            width: 100%;
-        }
-        
-        .shop-table p {
-            letter-spacing: 3px;
-            word-spacing: 5px;
-            margin-bottom: 10px;
-            text-align: center;
-            color: white;
-            font-size: 90%;
-            font-weight: 400;
-        }
-        
-        .shop-table button {
-            margin-left: 110px;
-            width: 90px;
-            padding: 5px;
-            background-color: #6d4c36;
-            border: 1px solid #ac7b58;
-            border-radius: 12px;
-            transition: margin-left 0.4s, width 0.4s, background-color 0.4s;
-        }
-        
-        .shop-table button:hover {
-            margin-left: 105px;
-            width: 100px;
-            background-color: #2b1e15;
-            border: 1px solid #6d4c36;
-        }
-        
-        .shop-table a {
-            text-decoration: none;
-            color: white;
-        }
-        /*--------------------sweet gallery section--------------------------*/
-        
-        .gallery-header {
-            text-transform: uppercase;
-            margin: 100px 0px 30px 0px;
-            font-size: 200%;
-            font-weight: 500;
-            color: #ac7b58;
-        }
-        
-        .gallery-header::after {
-            content: " ";
-            display: block;
-            width: 200px;
-            height: 1px;
-            margin: 0 auto;
-            margin-top: 30px;
-            background-color: #ac7b58;
-        }
-        
-        .gallery-text {
-            text-align: center;
-            font-size: 90%;
-            font-weight: 350;
-            margin-bottom: 80px;
-        }
-        
-        .sweet-gallery {
-            padding: 0;
-        }
-        
-        .show-case {
-            width: 100%;
-            list-style: none;
-        }
-        
-        .show-case li {
-            display: block;
-            float: left;
-            width: 25%;
-        }
-        
-        .photo {
-            margin: 0;
-            width: 100%;
-            overflow: hidden;
-            background-color: black;
-        }
-        
-        .photo img {
-            width: 100%;
-            height: auto;
-            transform: scale(1.15);
-            opacity: 0.7;
-            transition: transform 0.4s, opactiy 0.4s;
-        }
-        
-        .photo img:hover {
-            transform: scale(1.05);
-            opacity: 1;
-        }
-        /*--------------------footer section--------------------------*/
-        
-        .contact {
-            background-image: url(img/coffee-shop.jpg);
-            background-position: center;
-            background-size: cover;
-            height: 100px;
-        }
-        
-        .contact p {
-            font-size: 100%;
-            font-weight: 400;
-            color: #6d4c36;
-            margin: 35px 0px 30px 150px;
-            float: left;
-        }
-        
-        .contact button {
-            float: right;
-            margin: 30px 100px 30px 0px;
-            padding: 7px;
-            background-color: #ac7b58;
-            border: 1px solid #ac7b58;
-            border-radius: 12px;
-            transition: background-color 0.4s;
-        }
-        
-        .contact button:hover {
-            background-color: #2b1e15;
-        }
-        
-        .contact button a {
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 100%;
-            font-weight: 400;
-            color: white;
-        }
-        
-        .email {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/footer.jpg);
-            background-position: center;
-            background-size: cover;
-            height: 90vh;
-        }
-        
-        .email-logo {
-            font-size: 120%;
-            font-weight: 500;
-            display: inline-block;
-            color: white;
-            border: 1px solid white;
-            border-radius: 15px;
-            padding: 15px;
-            margin-left: 43%;
-            margin-top: 100px;
-        }
-        
-        .email-text {
-            font-size: 80%;
-            font-weight: 400;
-            color: white;
-            text-align: center;
-            margin-top: 30px;
-            margin-bottom: 70px;
-        }
-        
-        .address {
-            text-transform: uppercase;
-            color: white;
-            font-size: 110%;
-            font-weight: 400;
-            text-align: center;
-            margin-bottom: 5px;
-        }
-        
-        .email input {
-            background-color: transparent;
-            color: white;
-            width: 350px;
-            height: 50px;
-            font-size: 110%;
-            font-weight: 350;
-            margin-left: 35%;
-            padding-left: 20px;
-            border: 1px solid white;
-        }
-        
-        .e-logo {
-            background-color: white;
-            color: black;
-            padding: 12px;
-            font-size: 110%;
-            border: 1px solid transparent;
-            transition: background-color 0.4s, border 0.4s;
-        }
-        
-        .e-logo:hover {
-            background-color: #ccae9a;
-            border: 1px solid #ac7b58
-        }
-        
-        .copy {
-            background-color: rgb(41, 32, 32);
-            height: 30vh;
-            margin: 0;
-        }
-        
-        .copy-text {
-            color: white;
-            font-size: 80%;
-            font-weight: 300;
-            float: left;
-            margin-top: 50px;
-            margin-left: 5%;
-        }
-        
-        .footer-nav {
-            list-style: none;
-            padding-top: 48px;
-        }
-        
-        .has {
-            margin-left: 100px;
-        }
-        
-        .footer-nav li {
-            display: inline;
-            margin-left: 4%;
-        }
-        
-        .footer-nav li a {
-            font-size: 80%;
-            font-weight: 400;
-            text-decoration: none;
-            color: white;
-            transition: color 0.3s;
-        }
-        
-        .footer-nav li a:hover {
-            color: #ac7b58;
-        }
-        
-        .foot-logo {
-            color: white;
-            display: block;
-            float: right;
-            margin-left: 30px;
-            margin-right: 40px;
-            transition: color 0.3s;
-        }
-        
-        .foot-logo:hover {
-            color: #ac7b58;
-        }
+/*---------------------Main section--------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.clear-fixed {
+    zoom: 1;
+}
+
+.clear-fixed::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*---------------------Header section--------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/slider1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.nav {
+    background-color: black;
+    position: fixed;
+}
+
+.shop-name,
+.logo {
+    color: #ccae9a;
+}
+
+.logo {
+    font-size: 150%;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.shop-name {
+    font-size: 110%;
+    display: inline-block;
+    border: 1px solid #ccae9a;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    float: left;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 10px;
+}
+
+.main-nav li {
+    display: inline;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.main-nav li .home {
+    border-bottom: 2px solid #ccae9a;
+    padding-bottom: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav li .link {
+    text-decoration: none;
+    color: #ccae9a;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s, color 0.3s;
+}
+
+.main-nav li .link:hover {
+    color: #f5efeb;
+    border-bottom: 2px solid #ccae9a;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.text-box h1 {
+    font-weight: 400;
+    font-size: 250%;
+    padding-left: 170px;
+    text-transform: uppercase;
+}
+
+.text:before {
+    content: " ";
+    display: block;
+    width: 200px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #ccae9a;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text {
+    text-align: center;
+    font-weight: 200;
+}
+
+
+/*---------------------Feature section--------------------------*/
+
+.offer-table {
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 80%;
+}
+
+.offer-col {
+    width: 20%;
+}
+
+.offer {
+    margin-top: 100px;
+}
+
+h2,
+.offer-text {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #ac7b58;
+}
+
+h2::after {
+    content: " ";
+    display: block;
+    width: 200px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.offer-text {
+    font-size: 90%;
+    color: #2b1e15;
+}
+
+.small-icon {
+    padding-left: 100px;
+    padding-bottom: 25px;
+    font-size: 240%;
+    color: #6d4c36;
+}
+
+.feature-text {
+    color: black;
+    text-align: center;
+    font-size: 70%;
+}
+
+
+/*---------------------Ads section--------------------------*/
+
+.ads {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/slider3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    margin-top: 100px;
+}
+
+.over {
+    width: 100%;
+    height: 400px;
+}
+
+.animation {
+    position: absolute;
+    top: 500px;
+    left: 450px;
+    font-weight: 600;
+    font-size: 180%;
+    display: inline;
+    padding: 15px;
+    color: #ac7b58;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+    border: 1px solid #ac7b58;
+    border-radius: 12px;
+    animation: ads 2s ease-in-out;
+}
+
+@keyframes ads {
+    from {
+        top: 550px;
+        left: 800px;
+        font-weight: 0;
+        font-size: 0%;
+        padding: 0px;
+        color: white;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        border: 0px solid white;
+        border-radius: 0px;
+        opacity: 0;
+    }
+    to {
+        top: 500px;
+        left: 450px;
+        font-weight: 600;
+        font-size: 180%;
+        display: inline;
+        padding: 15px;
+        color: #ac7b58;
+        letter-spacing: 10px;
+        word-spacing: 15px;
+        border: 1px solid #ac7b58;
+        border-radius: 12px;
+        opacity: 1;
+    }
+}
+
+
+/*---------------------Coffee Quality section--------------------------*/
+
+.quality-table {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 90%;
+}
+
+.quality-col {
+    width: 25%;
+}
+
+.quality-header,
+h4,
+h5,
+.quality-text {
+    text-align: center;
+}
+
+.quality-header {
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 200%;
+    color: #ac7b58;
+    text-transform: uppercase;
+}
+
+.quality-header::after {
+    content: " ";
+    display: block;
+    width: 200px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: black;
+    margin-top: 30px;
+}
+
+.quality {
+    font-style: italic;
+    font-size: 250%;
+    font-weight: 400;
+    color: #ac7b58;
+    padding-bottom: 20px;
+}
+
+h5 {
+    font-weight: 400;
+    font-size: 110%;
+    text-transform: uppercase;
+}
+
+.quality-text {
+    font-size: 66%;
+    font-weight: 300;
+}
+
+
+/*---------------------Coffee shop section--------------------------*/
+
+.coffee-shop {
+    margin-top: 60px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/coffee-shop.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.shop-header {
+    font-size: 200%;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    padding-top: 60px;
+}
+
+.shop-header::after {
+    content: " ";
+    display: block;
+    width: 400px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #ac7b58;
+    margin-top: 30px;
+}
+
+.shop-table {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.shop-col {
+    margin-right: 50px;
+    width: 20%;
+}
+
+.shop-table img {
+    width: 100%;
+    filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.466));
+    transform: scale(1);
+    opacity: 0.8;
+    transition: filter 0.4s, transform 0.4s, opacity 0.4s;
+}
+
+.shop-table img:hover {
+    filter: drop-shadow(-15px 15px 15px black);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.shop-table p {
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-size: 90%;
+    font-weight: 400;
+}
+
+.shop-table a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*--------------------sweet gallery section--------------------------*/
+
+.gallery-header {
+    text-transform: uppercase;
+    margin: 100px 0px 30px 0px;
+    font-size: 200%;
+    font-weight: 500;
+    color: #ac7b58;
+}
+
+.gallery-header::after {
+    content: " ";
+    display: block;
+    width: 200px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #ac7b58;
+}
+
+.gallery-text {
+    text-align: center;
+    font-size: 90%;
+    font-weight: 350;
+    margin-bottom: 80px;
+}
+
+.sweet-gallery {
+    padding: 0;
+}
+
+.show-case {
+    width: 100%;
+    list-style: none;
+}
+
+.show-case li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.photo {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    opacity: 0.7;
+    transition: transform 0.4s, opactiy 0.4s;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+
+/*--------------------footer section--------------------------*/
+
+.contact {
+    background-image: url(img/coffee-shop.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+}
+
+.contact p {
+    font-size: 100%;
+    font-weight: 400;
+    color: #6d4c36;
+    margin: 35px 0px 30px 150px;
+    float: left;
+}
+
+.contact button {
+    float: right;
+    margin: 30px 100px 30px 0px;
+    padding: 7px;
+    background-color: #ac7b58;
+    border: 1px solid #ac7b58;
+    border-radius: 12px;
+    transition: background-color 0.4s;
+}
+
+.contact button:hover {
+    background-color: #2b1e15;
+}
+
+.contact button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 400;
+    color: white;
+}
+
+.email {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.email-logo {
+    font-size: 120%;
+    font-weight: 500;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: 43%;
+    margin-top: 100px;
+}
+
+.email-text {
+    font-size: 80%;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.address {
+    text-transform: uppercase;
+    color: white;
+    font-size: 110%;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.email input {
+    background-color: transparent;
+    color: white;
+    width: 350px;
+    height: 50px;
+    font-size: 110%;
+    font-weight: 350;
+    margin-left: 35%;
+    padding-left: 20px;
+    border: 1px solid white;
+}
+
+.e-logo {
+    background-color: white;
+    color: black;
+    padding: 12px;
+    font-size: 110%;
+    border: 1px solid transparent;
+    transition: background-color 0.4s, border 0.4s;
+}
+
+.e-logo:hover {
+    background-color: #ccae9a;
+    border: 1px solid #ac7b58
+}
+
+.copy {
+    background-color: rgb(41, 32, 32);
+    height: 30vh;
+    margin: 0;
+}
+
+.copy-text {
+    color: white;
+    font-size: 80%;
+    font-weight: 300;
+    float: left;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+
+.footer-nav {
+    list-style: none;
+    padding-top: 48px;
+}
+
+.has {
+    margin-left: 100px;
+}
+
+.footer-nav li {
+    display: inline;
+    margin-left: 4%;
+}
+
+.footer-nav li a {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-nav li a:hover {
+    color: #ac7b58;
+}
+
+.foot-logo {
+    color: white;
+    display: block;
+    float: right;
+    margin-left: 30px;
+    margin-right: 40px;
+    transition: color 0.3s;
+}
+
+.foot-logo:hover {
+    color: #ac7b58;
+}
