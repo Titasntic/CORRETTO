@@ -1,0 +1,135 @@
+.sign {
+    width: 40%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/signin.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    filter: drop-shadow(-20px 20px 20px black);
+    margin-top: 20%;
+    margin-left: 40%;
+    transform: translate(-20%, -40%);
+}
+
+.sign td {
+    width: 20%;
+}
+
+.sign img {
+    border-radius: 12px;
+    padding: 0;
+    width: 100%;
+}
+
+.log-logo,
+label,
+input {
+    margin-top: 10px;
+    color: white;
+}
+
+.log-logo {
+    font-size: 100%;
+    margin-left: 30px;
+}
+
+label {
+    font-size: 100%;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+input {
+    font-size: 90%;
+    font-weight: 400;
+    color: black;
+    background-color: #ccae9a;
+    border: 1px solid #ac7b58;
+    border-radius: 8px;
+    padding-left: 6px;
+}
+
+.forgot {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.forgot a {
+    text-decoration: none;
+    color: white;
+    font-size: 100%;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+.forgot a:hover {
+    color: #ac7b58;
+}
+
+button {
+    margin-left: 220px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+button:hover {
+    background-color: #ac7b58;
+    border: 1px solid #ac7b58;
+}
+
+.login {
+    font-size: 100%;
+    font-weight: 300;
+    color: white;
+}
+
+hr {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.login:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.sign-a a {
+    font-size: 100%;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.sign-a a:hover {
+    color: #ac7b58;
+}
+
+.sign-logo {
+    margin-left: 140px;
+    padding-right: 10px;
+}
+
+.sign-up {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    font-weight: 300;
+}
+
+.sign-up a {
+    padding-left: 5px;
+    color: white;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.sign-up a:hover {
+    border-bottom: 1px solid black;
+    color: black;
+}

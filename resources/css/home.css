@@ -100,7 +100,7 @@ header {
     position: absolute;
     top: 50%;
     left: 30%;
-    transform: translate(-50%, -50%);
+    transform: translate(-30%, -50%);
     color: white;
 }
 
@@ -370,11 +370,6 @@ h5 {
     color: white;
     font-size: 90%;
     font-weight: 400;
-}
-
-.shop-table a {
-    text-decoration: none;
-    color: white;
 }
 
 
